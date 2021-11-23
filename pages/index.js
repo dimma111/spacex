@@ -40,7 +40,7 @@ const Home = observer(() => {
       </Head>
 
       <header>
-        <div className={styles.pageTitle}>
+        <div className="pageTitle">
           <h1>SpaceX Launches</h1>
         </div>
       </header>

@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./LaunchCard.module.scss";
 import Moment from "react-moment";
+import Link from "next/link";
 import "moment/locale/ru";
 
 export default function LaunchCard(props) {
@@ -23,6 +24,9 @@ export default function LaunchCard(props) {
           <a href={props.data.links.wikipedia} target="_blank">
             Ссылка на Wiki
           </a>
+        </div>
+        <div className={style.launchCardField}>
+          <Link href={`/launch/${props.data.id}`}>Подробнее</Link>
         </div>
       </div>
     </div>
