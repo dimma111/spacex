@@ -1,6 +1,33 @@
 .launchCardWrap {
   border-radius: 15px;
-  padding: 10px;
+  padding: 10px 10px 20px;
   background-color: rgba(255, 255, 255, 0.8);
   color: #000;
+  height: 100%;
+}
+
+.launchCardName {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0 20px;
+  font-size: 24px;
+}
+
+.launchCardFields {
+  padding-top: 15px;
+  span {
+    font-weight: bold;
+    padding-right: 5px;
+  }
+}
+
+.launchCardField + .launchCardField {
+  margin-top: 5px;
+}
+
+.launchCardField {
+  a {
+    color: rgb(18, 115, 206);
+    text-decoration: underline;
+  }
 }
