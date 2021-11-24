@@ -13,6 +13,7 @@ const Home = observer(() => {
   let currentPage = 1;
 
   useEffect(() => {
+    launchesStore.launches = [];
     launchesStore.fetchLaunches(currentPage);
     document.addEventListener("scroll", scrollHandler);
     return function () {
